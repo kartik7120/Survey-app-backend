@@ -46,7 +46,7 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }))
-app.use('/', indexRouter);
+app.use('/hello', indexRouter);
 app.use('/users', usersRouter);
 app.use("/testServer", router); // for testing the router the server
 app.use("/poll", pollRouter);
